@@ -4,284 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-Siddhant Pol</title>
-    <link rel="icon" type="image/png" href="bag.svg" />
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>About | Siddhant Pol</title>
+
+    <link rel="icon" type="image/svg+xml" href="bag.svg">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        /* Dropdown menu color customization */
-        .accordion-button:not(.collapsed) {
-            background-color: #2c2c2c;
-            color: white;
+        body {
+            background-color: #121212;
         }
 
         .accordion-button {
             background-color: #2c2c2c;
-            color: rgb(101, 98, 98);
+            color: #8df7c4;
+            font-weight: 500;
         }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #2c2c2c;
+            color: #ffffff;
+        }
+
         .accordion-button:focus {
             box-shadow: none;
         }
 
-        .accordion-button:not(.collapsed):after {
-            content: none;
+        .accordion-button::after {
+            filter: invert(1);
         }
-        .accordion-body{
+
+        .accordion-body {
             background-color: #1e1d1d;
-            color: rgb(221, 225, 228);
+            color: #dde1e4;
+        }
+
+        .resume-link a {
+            color: #8df7c4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .resume-link a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a href="index.html">Portfolio.</a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link " href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="blog.html">Blog.</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+
+<header class="header">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Portfolio.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
+<section class="py-5">
+    <div class="container text-light">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-4">
+                <h2>SIDDHANT POL</h2>
+                <p>Mumbai, India | +91-8898666595 | 
+                    <a href="mailto:siddhant.pol124@gmail.com">siddhant.pol124@gmail.com</a>
+                </p>
+                <p class="resume-link">
+                    <a href="SiddhantPol.pdf" download>Download Resume</a>
+                </p>
+            </div>
+        </div>
 
+        <div class="row justify-content-center">
+            <div class="col-md-8">
 
-
-
-
-
-    <section class="home">
-        <!--<style>
-            .row {
-                background-color: #168185;
-            }
-        </style>-->
-        <div class="container" style="color:#e3f9ee">
-            <div class="container" style="color:#e3f9ee">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 ">
-                        <h2 class="text-center mt-5">SIDDHANT POL</h2>
-                        <p class="text-center">Mumbai, India | +91-8898666595 | <a href="mailto:siddhant.pol124@gmail.com">siddhant.pol124@gmail.com</a> </p>
-                            <p class="text-center resume-link">
-                        <a href="SiddhantPol.pdf" download >
-                            Download Resume
-                        </a>
-                        </p>
-                        <div class="row">
-                        <div class="row">
-                            <div class="col-md-8 offset-md-2">
-                                <div class="accordion" id="accordioncurricular">
-                                    <div class="accordion-item">
-                                        <h3 class="accordion-header" id="headingFour">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecurricular" aria-expanded="false" aria-controls="collapseCertification">
-                                                Professional Experience
-                                            </button>
-                                        </h3>
-                                        <div id="collapsecurricular" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordioncurricular">
-                                            <div class="accordion-body">
-                                                <h5><strong>Corsearch</strong> – OBP Analyst</h5>
-                                                <p><em>April 29, 2024 – Present</em></p>
-                                                <ul>
-                                                <li>Gained in-depth understanding of IP laws, e-commerce operations, and global brand compliance protocols.</li>
-                                                <li>Contributed to quality assurance by flagging system errors, improving platform workflow, and reducing operational redundancies, resulting in a 15% improvement in case resolution speed.</li>
-                                                <li>Delivered high-volume data handling with accuracy and efficiency, ensuring timely processing within SLAs.</li>
-                                                <li>Collaborated with cross-functional international teams to execute takedown strategies and ensure brand safety.</li>
-                                                <li>Analyzed, reviewed, and escalated infringing online listings, counterfeit products, and intellectual property violations across major marketplaces and social media.</li>
-                                                <li>Spearheaded operational enforcement for global brands through OBP platforms, processing over 10,000+ listings per month with a 96% SLA adherence rate.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                    <div class="row">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h3 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation" aria-expanded="false" aria-controls="collapseEducation tyle="color:#8df7c4">
-                                        Education
-                                    </button>
-                                </h3>
-                                <div id="collapseEducation" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <!-- Education content goes here -->
-                                        <ul>
-                                            <li>
-                                                <p>
-                                                    <strong>Bachelor of Engineering in Computer Science</strong>
-                                                    (Ramrao Adik Institute of Technology, Navi Mumbai) | Jun 2018 - Apr 2022|Mumbai University 
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <strong>Higher Secondary School Certificate</strong> (Swami Vivekanand Jr. College, Chembur, Mumbai) | 2016 - 2018|
-                                                    Mumbai University.
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <strong>Secondary School Certificate</strong> (Swami Vivekanand High School, Chembur, Mumbai) | 2008 - 2016|
-                                                    Mumbai University.
-                                                </p>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Technical And Interpersonal skills section -->
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="accordion" id="accordionExperience">
-                            <div class="accordion-item">
-                                <h3 class="accordion-header" id="headingExperience">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExperience" aria-expanded="false" aria-controls="collapseExperience">
-                                        Technical And Interpersonal skills
-                                    </button>
-                                </h3>
-                                <div id="collapseExperience" class="accordion-collapse collapse" aria-labelledby="headingExperience" data-bs-parent="#accordionExperience">
-                                    <div class="accordion-body">
-                                        <!-- Technical And Interpersonal skills content goes here -->
-                                        <ul>
-                                            <li><strong>Programming Languages:</strong> C#, Java, Python, JavaScript</li>
-                                            <li><strong>Web Development:</strong> ASP.Net(Core,MVC,Framework), React, HTML, CSS</li>
-                                            <li><strong>Design and Graphics:</strong> Adobe Photoshop, Adobe PremierePro</li>
-                                            <li><strong>Version Control: </strong>Git</li>
-                                            <li><strong>Database Management:</strong> MySQL, SQL , MongoDB</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                <!-- PROFESSIONAL EXPERIENCE -->
+                <div class="accordion mb-3" id="accordionProfessional">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#professional">
+                                Professional Experience
+                            </button>
+                        </h3>
+                        <div id="professional" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <h5><strong>Corsearch</strong> – OBP Analyst</h5>
+                                <p><em>April 29, 2024 – Present</em></p>
+                                <ul>
+                                    <li>Handled large-scale IP enforcement operations across global marketplaces and social platforms.</li>
+                                    <li>Processed 10,000+ listings monthly with 96% SLA adherence.</li>
+                                    <li>Improved workflow efficiency, reducing case resolution time by 15%.</li>
+                                    <li>Collaborated with cross-functional international teams for takedown execution.</li>
+                                    <li>Identified counterfeit products, copyright infringements, and brand misuse.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projects section -->
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="accordion" id="accordionProjects">
-                            <div class="accordion-item">
-                                <h3 class="accordion-header" id="headingProjects">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
-                                        Projects
-                                    </button>
-                                </h3>
-                                <div id="collapseProjects" class="accordion-collapse collapse" aria-labelledby="headingProjects" data-bs-parent="#accordionProjects">
-                                    <div class="accordion-body">
-                                        <!-- Projects content goes here -->
-                                        <ul>
-                                            <li><strong>Personality Prediction Through C.V. Analysis (Briggs Myers™)</strong> | Final Year Project (Mumbai University) |Utilized Briggs Myers' framework to predict personality traits from resumes, enhancing hiring processes through data-driven insights and candidate evaluation.
-                                            </li>
-                                            <li><strong>Library System Management </strong>| Efficient library system management ensures seamless book cataloging, circulation, and user-friendly access for an enhanced library experience.(Link-<a href="https://github.com/siddhantpol/ELibrary">Click Here</a>) </li>
-                                        </ul>
-                                    </div>
-                                    <div class="accordion-body">
-                                        <p><strong>Marketplace Monitoring Optimization</strong> | <em>Corsearch (2024)</em></p>
-                                        <ul>
-                                        <li>Implemented process improvements that reduced average listing analysis time by 13%, ensuring 99% compliance with global SLA benchmarks.</li>
-                                        <li>Conducted mock workflow analysis using open datasets to identify process bottlenecks and simulate real-time escalation handling based on lean operations principles.</li>
-                                        </ul>
-                                        <p><strong>Core Skills & Focus Areas:</strong></p>
-                                        <ul>
-                                        <li>Data Analysis & Reporting</li>
-                                        <li>Process Optimization</li>
-                                        <li>Root Cause Analysis (RCA)</li>
-                                        <li>SLA Adherence</li>
-                                        <li>SOP Implementation</li>
-                                        <li>Cross-Functional Coordination</li>
-                                        <li>Operational Metrics Tracking</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                <!-- EDUCATION -->
+                <div class="accordion mb-3" id="accordionEducation">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#education">
+                                Education
+                            </button>
+                        </h3>
+                        <div id="education" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><strong>B.E. Computer Science</strong>, RAIT Navi Mumbai (2018–2022)</li>
+                                    <li><strong>HSC</strong>, Swami Vivekanand Jr. College (2016–2018)</li>
+                                    <li><strong>SSC</strong>, Swami Vivekanand High School (2008–2016)</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Certificate section -->
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="accordion" id="accordionCertificate">
-                            <div class="accordion-item">
-                                <h3 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCertification" aria-expanded="false" aria-controls="collapseCertification">
-                                        Certification And Courses
-                                    </button>
-                                </h3>
-                                <div id="collapseCertification" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionCertificate">
-                                    <div class="accordion-body">
-                                        <!-- Certification content goes here -->
-                                        <ul>
-                                            <li><strong>C Language</strong> | Seed Infotech | 2023</li>
-                                            <li><strong>SQL</strong> | Seed Infotech | 2023</li>
-                                            <li><strong>C#</strong> | Seed Infotech | 2023</li>
-                                            <li><strong>Responsive Web Development</strong> | Seed Infotech | 2023</li>
-                                            <li><strong>ASP.NET (Framework)</strong> | Seed Infotech | 2023</li>
-                                            <li><strong>ASP.NET (Core)</strong> | Seed Infotech | 2023</li>
-                                            <li><strong>ASP.NET (Web API)</strong> | Seed Infotech | 2023</li>
-                                          </ul>
-                                    </div>
-                                </div>
+
+                <!-- SKILLS -->
+                <div class="accordion mb-3" id="accordionSkills">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#skills">
+                                Technical and Interpersonal Skills
+                            </button>
+                        </h3>
+                        <div id="skills" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><strong>Languages:</strong> C#, Java, Python, JavaScript</li>
+                                    <li><strong>Web:</strong> ASP.NET (Core, MVC), React, HTML, CSS</li>
+                                    <li><strong>Database:</strong> MySQL, SQL, MongoDB</li>
+                                    <li><strong>Tools:</strong> Git, Photoshop, Premiere Pro</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- curricular section -->
-                
+
+                <!-- PROJECTS -->
+                <div class="accordion mb-3" id="accordionProjects">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#projects">
+                                Projects
+                            </button>
+                        </h3>
+                        <div id="projects" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><strong>Personality Prediction via CV Analysis</strong> – Final Year Project</li>
+                                    <li><strong>Library Management System</strong> – 
+                                        <a href="https://github.com/siddhantpol/ELibrary" target="_blank">GitHub</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATIONS -->
+                <div class="accordion mb-3" id="accordionCertifications">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#certifications">
+                                Certifications and Courses
+                            </button>
+                        </h3>
+                        <div id="certifications" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>C, C#, SQL, ASP.NET (Core, MVC, Web API) – Seed Infotech</li>
+                                    <li>Responsive Web Development – Seed Infotech</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get all accordion items
-            const accordionItems = document.querySelectorAll('.accordion-item');
-    
-            // Attach event listener to each item
-            accordionItems.forEach(function (item) {
-                item.addEventListener('show.bs.collapse', function () {
-                    // Close all other accordion items when one is shown
-                    accordionItems.forEach(function (otherItem) {
-                        if (otherItem !== item) {
-                            const collapse = new bootstrap.Collapse(otherItem.querySelector('.collapse'), {
-                                toggle: false
-                            });
-                            collapse.hide();
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 </body>
 </html>
-
