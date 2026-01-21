@@ -134,7 +134,9 @@
     <nav class="navbar navbar-expand-xl navbar-dark">
       <div class="container">
         <div class="navbar-brand">
-          <a href="index.html">Portfolio.</a>
+                <a href="index.html">
+                <img src="Logo.svg" alt="Siddhant Pol Logo" height="25">
+                </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -142,13 +144,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link " href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog.</a>
+                            <a class="nav-link active" href="blog.html">Blog.</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
@@ -257,10 +259,9 @@
               </div>
               <span class="badge mt-3">Design</span>
             </div>
-            <div id="noResultsMessage" style="display: none; text-align: center; color: #ccc; font-size: 1.2rem; margin-top: 30px;">
-                  No blogs available.
-              </div>
-
+                  <div id="noResultsMessage" style="display:none; text-align:center; color:#ccc; font-size:1.2rem; margin-top:30px;">
+                    No blogs available.
+                  </div>
           </div>
       </div>
     </div>
@@ -270,37 +271,60 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-  function searchBlogs(event) {
-    event.preventDefault();
-    const query = document.getElementById('blogSearchInput').value.toLowerCase().trim();
-    const cards = document.querySelectorAll('.card');
-    let anyVisible = false;
+function searchBlogs(event) {
+  event.preventDefault();
 
-    cards.forEach(card => {
-      const title = card.querySelector('.card-title')?.innerText.toLowerCase() || '';
-      const text = card.querySelector('.card-text')?.innerText.toLowerCase() || '';
-      const matches = title.includes(query) || text.includes(query);
+  const query = document.getElementById('blogSearchInput').value
+    .toLowerCase()
+    .trim();
 
-      const col = card.closest('.col'); // Get the full column wrapper
-      if (matches) {
-        col.style.display = 'block';
-        anyVisible = true;
-      } else {
-        col.style.display = 'none';
-      }
-    });
+  const row = document.querySelector('.row'); // card container
+  const cols = Array.from(row.children);
+  const noResultsMessage = document.getElementById('noResultsMessage');
 
-    // Show/hide "No blogs" message
-    const noResultsMessage = document.getElementById('noResultsMessage');
-    if (!anyVisible) {
-      noResultsMessage.style.display = 'block';
+  let matched = [];
+  let unmatched = [];
+
+  cols.forEach(col => {
+    const card = col.querySelector('.card');
+    if (!card) return;
+
+    const title = card.querySelector('.card-title')?.innerText.toLowerCase() || '';
+    const text = card.querySelector('.card-text')?.innerText.toLowerCase() || '';
+
+    if (title.includes(query) || text.includes(query)) {
+      matched.push(col);
     } else {
-      noResultsMessage.style.display = 'none';
+      unmatched.push(col);
     }
+  });
 
-    return false;
+  // Clear row
+  row.innerHTML = '';
+
+  // Append matched first
+  matched.forEach(col => {
+    col.style.display = 'block';
+    row.appendChild(col);
+  });
+
+  // Append unmatched (hidden)
+  unmatched.forEach(col => {
+    col.style.display = 'none';
+    row.appendChild(col);
+  });
+
+  // Handle no results
+  if (matched.length === 0) {
+    noResultsMessage.style.display = 'block';
+  } else {
+    noResultsMessage.style.display = 'none';
   }
+
+  return false;
+}
 </script>
+
 
 
 
