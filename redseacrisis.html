@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Sea Crisis and Supply Chain Operations</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="bag.svg" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+    }
+
+    .blog-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2%;
+      margin-top: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .blog-subtitle {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #ffffff;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .blog-content {
+      padding-top: 5px;
+      display: block;
+      text-align: justify;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .blog-content p {
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      background-color: #454545;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+
+    .blog-image {
+      display: block;
+      max-width: 100%;
+      margin: 2rem auto;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header" style="margin-bottom:60px;">
+  <nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <div class="container">
+      <div class="navbar-brand brand1">
+        <a href="index.html">
+          <img src="Logo.svg" alt="Siddhant Pol Logo" height="25">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog.</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="blog-section" style="margin-bottom:60px;">
+
+  <h1 class="blog-title">
+    How the Red Sea Crisis Quietly Broke the Assumptions Behind Global Supply Chains
+  </h1>
+
+  <h2 class="blog-subtitle">
+    Why route disruption exposed deeper flaws in modern operations design
+  </h2>
+
+  <div class="blog-content">
+
+    <p>
+      For years, global supply chains were built on one fragile assumption:
+      <span class="highlight">the fastest route will always be available</span>.
+    </p>
+
+    <p>
+      The Red Sea crisis proved how dangerous that assumption was. Almost overnight,
+      one of the world’s most critical maritime corridors became a high-risk zone.
+      Containers kept moving, but the logic behind global operations stopped working
+      the way businesses expected.
+    </p>
+
+    <img src="Reaseaimpact.webp"
+         alt="Impact of Red Sea Crisis on Global Supply Chains"
+         class="blog-image">
+
+    <p>
+      When the Red Sea and Suez route became unsafe, shipping lines diverted vessels
+      around the Cape of Good Hope. This was not a minor adjustment. It fundamentally
+      changed cost structures, transit times, and delivery reliability across industries.
+    </p>
+
+    <p>
+      Transit times increased by roughly two weeks. Container freight rates rose sharply.
+      Marine insurance premiums increased due to heightened risk. For India alone,
+      nearly one-fifth of exports passing through this corridor were directly impacted.
+    </p>
+
+    <p>
+      The real problem was not delay. It was the loss of predictability.
+    </p>
+
+    <p>
+      Factories could not plan production accurately. Inventory planners lost confidence
+      in forecasts. Customer commitments became harder to honor. Supply chains did not
+      collapse; they became uncertain, and uncertainty is operationally expensive.
+    </p>
+
+    <p>
+      Unlike pandemics or port congestion, this crisis did not stop trade. Goods continued
+      to flow, but at uneven speeds and unpredictable intervals. Just-in-time models failed.
+      Over-optimized networks were exposed.
+    </p>
+
+    <p>
+      The organizations that adapted best were not the largest or most automated.
+      They were the ones with visibility into their flows and flexibility built into
+      their network design.
+    </p>
+
+    <p>
+      The Red Sea crisis will not be remembered only as a geopolitical event.
+      It will be remembered as a stress test that many supply chains failed.
+    </p>
+
+    <p>
+      <em>
+        If one route disruption can destabilize your operations, the issue is not the crisis.
+        It is the design.
+      </em>
+    </p>
+
+    <div class="btn-container">
+      <div class="btn-box">
+        <a href="blog.html">Blogs</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 30) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
