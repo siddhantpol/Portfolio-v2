@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew Bliss Café | Lean Six Sigma Case Study</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="bag.svg" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+    }
+
+    .blog-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2%;
+      margin-top: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .blog-subtitle {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #ffffff;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .blog-content {
+      padding-top: 5px;
+      display: block;
+      text-align: justify;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .blog-content p {
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      background-color: #454545;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header" style="margin-bottom:60px;">
+  <nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <div class="container">
+      <div class="navbar-brand brand1">
+        <a href="index.html">
+          <img src="Logo.svg" alt="Siddhant Pol Logo" height="25">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog.</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="blog-section" style="margin-bottom:60px;">
+
+  <h1 class="blog-title">
+    How Lean Six Sigma Transformed a Small Café’s Operations
+  </h1>
+
+  <h2 class="blog-subtitle">
+    A Brew Bliss Café case study on reducing variability, not just speed
+  </h2>
+
+  <div class="blog-content">
+
+    <p>
+      Brew Bliss Café in Pune was built on passion and customer experience. As footfall
+      increased, operational cracks began to appear. Customers complained about long
+      waits during peak hours, inconsistent coffee taste, and unpredictable service times.
+      Despite staff working hard, outcomes varied.
+    </p>
+
+    <p>
+      The core issue was not effort. It was process instability.
+    </p>
+
+    <p>
+      Using the <span class="highlight">DMAIC</span> methodology of Lean Six Sigma, a structured
+      improvement project was launched to address service delays without adding staff,
+      changing the menu, or redesigning the café layout.
+    </p>
+
+    <p>
+      <strong>Define Phase:</strong> Customer feedback was captured through Voice of Customer
+      analysis, revealing that speed and consistency were must-have expectations.
+      A SMART goal was defined: reduce average coffee delivery time to under five minutes
+      during peak hours without compromising quality. A SIPOC map clarified process scope
+      and ownership.
+    </p>
+
+    <p>
+      <strong>Measure Phase:</strong> Data was collected for each order from placement to delivery.
+      Baseline analysis showed an average service time of 4.82 minutes, but with high
+      variability. Service times ranged from just over two minutes to more than ten.
+      The process sigma level was only 0.12, confirming an unreliable system.
+    </p>
+
+    <p>
+      <strong>Analyze Phase:</strong> Value Stream Mapping revealed significant non-value-added
+      time spent searching for ingredients, handling special orders, and correcting mistakes.
+      Fishbone and Pareto analysis showed that missing cutlery, unsorted ingredients, and
+      special order confusion caused over 75 percent of delays. Five-Why analysis traced
+      these issues back to lack of standard routines and visual controls.
+    </p>
+
+    <p>
+      <strong>Improve Phase:</strong> A Kaizen Blitz redesigned special order handling using visual
+      cues and standardized steps. The 5S methodology was applied to ingredient and cutlery
+      stations, introducing labeling, visual layouts, and setup checklists. These changes
+      simplified work instead of adding pressure.
+    </p>
+
+    <p>
+      <strong>Control Phase:</strong> Standard operating procedures, daily audits, and control
+      charts were introduced to sustain improvements. Post-implementation data showed
+      average delivery time reduced to 3.99 minutes, variability dropped sharply, and
+      sigma level improved to 3.36. The process became stable and predictable.
+    </p>
+
+    <p>
+      This case demonstrates a critical lesson for small businesses:
+      <em>average performance hides instability, but consistency builds trust.</em>
+      Brew Bliss Café did not grow by working harder. It grew by designing better systems.
+    </p>
+
+    <div class="btn-container">
+      <div class="btn-box">
+        <a href="blog.html">Blogs</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 30) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
